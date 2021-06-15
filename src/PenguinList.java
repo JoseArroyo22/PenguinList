@@ -22,6 +22,7 @@ public class PenguinList {
 
     public void addFirst(int i, int w, int h) {
         first = new IntNode(i, w, h, first);
+        listSize++;
     }
 
     public int getFirstID() {
@@ -42,7 +43,7 @@ public class PenguinList {
         while (p != null) {
             totalSize++;
             p = p.next;
-            listSize++;
+            ;
         }
         return totalSize;
 
